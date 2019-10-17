@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="naosei.js">
     <title>StarWars Wiki</title>
     <link rel="script" href="index.js">
 </head>
+
 <body>
     <main>
         <div>
             <table>
-                <tr class="linha">
-                    <th colspan="2">Star Wars Characthers</th>
+                <tr id="l-0">
+                    <th colspan="7">Star Wars Characthers</th>
                 </tr>
-                <tr class="linha">
-                    <td>Personagem:</td>
-                    <td id="name">Luke Skywalker</td>
-                </tr>
-                <tr class="linha">
+                <tr class="linha dados">
+                    <td>Personagem</td>
                     <td>altura</td>
-                    <td id="height">172cm</td>
-                </tr>
-                <tr class="linha">
                     <td>Peso</td>
-                    <td id="mass">77kg</td>
-                </tr>
-                <tr class="linha">
                     <td>Cor do cabelo</td>
-                    <td id="hair_color">Blonde</td>
-                </tr>
-                <tr class="linha">
                     <td>Cor da Pele</td>
-                    <td id="skin_color">fair</td>
-                </tr>
-                <tr class="linha">
                     <td>Cor da Íris</td>
-                    <td id="eye_color">blue</td>
-                </tr>
-                <tr class="linha">
                     <td>Nascimento</td>
-                    <td id="birth_year">19BBY</td>
                 </tr>
-                <tr class="linha">
-                    <td class="esquerdo">Gênero</td>
-                    <td id="gender" class="direito">Male</td>
+                <tr id="l-1">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-2">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-3">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-4">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-5">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-6">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-7">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="birth_year"></td>
+                </tr>
+                <tr id="l-8">
+                    <td class="name"></td>
+                    <td class="height"></td>
+                    <td class="mass"></td>
+                    <td class="hair_color"></td>
+                    <td class="skin_color"></td>
+                    <td class="eye_color"></td>
+                    <td class="direito" class="birth_year"></td>
                 </tr>
             </table>
-            <button id="anterior">Anterior</button>
-            <button id="proximo">Próximo</button>
+            <button class="anterior" onclick="anterior()">Anterior</button>
+            <button class="proximo" onclick="proximo()">Próximo</button>
         </div>
     </main>
 </body>
 
-<script>
-    const myInit = { 
-		method: 'GET',
-        mode: 'cors',
-        cache: 'default'
-    };
-    var myData = document.get()
-    fetch(' https://swapi.co/api/people/?format=json',myInit)
-    .then(function(response) {
-        return response.blob();
-    })
-    .then(function(myBlob) {
-        var objectURL = URL.createObjectURL(myBlob);
-        myData.src = objectURL;
-    });
-</script>
+<script src="/index.js"></script>
 
 </html>
