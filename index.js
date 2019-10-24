@@ -4,20 +4,18 @@ let dados = document.getElementById("l-2")
 const myInit = { method: 'GET', mode: 'cors', cache: 'default' };
 
 
-for (let x = 0; x < 9; x++) {
-    let line = "l-" + (x+1)
-    document.getElementById(line).childNodes[1].innerHTML = API.results[x].name
-    document.getElementById(line).childNodes[3].innerHTML = API.results[x].height
-    document.getElementById(line).childNodes[5].innerHTML = API.results[x].mass
-    document.getElementById(line).childNodes[7].innerHTML = API.results[x].hair_color
-    document.getElementById(line).childNodes[9].innerHTML = API.results[x].skin_color
-    document.getElementById(line).childNodes[11].innerHTML = API.results[x].eye_color
-    document.getElementById(line).childNodes[13].innerHTML = API.results[x].birth_year
-}
-
-
 fetch('https://swapi.co/api/people/?format=json', myInit)
     .then(function (response) {
-
+        debugger
+        for (let x = 0; x < 8; x++) {
+            let line = "l-" + (x + 1)
+            document.getElementById(line).childNodes[1].innerHTML = API.results[x].name
+            document.getElementById(line).childNodes[3].innerHTML = API.results[x].height
+            document.getElementById(line).childNodes[5].innerHTML = API.results[x].mass
+            document.getElementById(line).childNodes[7].innerHTML = API.results[x].hair_color
+            document.getElementById(line).childNodes[9].innerHTML = API.results[x].skin_color
+            document.getElementById(line).childNodes[11].innerHTML = API.results[x].eye_color
+            document.getElementById(line).childNodes[13].innerHTML = API.results[x].birth_year
+        }
+        return response
     });
-console.log(dados)
