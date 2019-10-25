@@ -29,6 +29,9 @@ th {
 td {
     padding: 10px
 }
+tr:last-child > td:last-child {
+    border-bottom-right-radius: 20px;
+}
 .direito {
     border-bottom-right-radius: 25px;
 }
