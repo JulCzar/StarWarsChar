@@ -21,7 +21,7 @@ function api(atual = 'https://swapi.co/api/people/?format=json') {
                 <td>${element.hair_color}</td>
                 <td>${element.skin_color}</td>
                 <td>${element.eye_color}</td>
-                <td>${element.birth_year}</td>
+                <td class="ultima">${element.birth_year}</td>
             </tr>`)
             });
         });

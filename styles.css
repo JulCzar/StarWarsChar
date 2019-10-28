@@ -8,11 +8,10 @@ body {
 
 table {
     margin-top: 5vh;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 5.5vh;
+    border-bottom-right-radius: 5.5vh;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    margin: 0 10%;
 }
 
 table,
@@ -28,26 +27,26 @@ th {
 }
 
 th {
-    border-top-left-radius: 25px;
-    font-size: 50px;
-    padding: 50px;
+    border-top-left-radius: 5vh;
+    font-size: 10vh;
+    padding: 1vh;
 }
 
 td {
-    padding: 10px
+    padding: 2vh;
 }
 
-tr:last-child>td:last-child {
-    border-bottom-right-radius: 20px;
+tr:last-child > .ultima:last-child {
+    border-bottom-right-radius: 5vh;
 }
 
 .direito {
-    border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 5vh;
 }
 
 .dados {
     font-family: 'Lexend Mega', sans-serif;
-    font-size: 25px;
+    font-size: 2vh;
     font-weight: 900;
 }
 
