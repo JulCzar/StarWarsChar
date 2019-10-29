@@ -11,6 +11,9 @@ function api(atual = 'https://swapi.co/api/people/?format=json') {
         .then(response => response.json())
         .then(function(response) {
             proxLink = response.next
+            antLink = response.previous
+            document.getElementById("anterior").hidden = (antLink == null) ? true : false
+            document.getElementById("proximo").hidden = (proxLink == null) ? true : false
             body.innerHTML = ""
             response.results.forEach(element => {
                 body.insertAdjacentHTML('beforeend', `
