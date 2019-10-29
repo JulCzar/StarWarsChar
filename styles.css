@@ -7,11 +7,12 @@ body {
 }
 
 table {
-    margin-top: 5vh;
+    width: 80vmax;
+    height: 90vmin;
+    margin: 5vmin 10vmax;
     border-top-left-radius: 5.5vh;
     border-bottom-right-radius: 5.5vh;
     position: absolute;
-    margin: 0 10%;
 }
 
 table,
@@ -51,11 +52,33 @@ tr:last-child > .ultima:last-child {
 }
 
 .botoes {
-    background: inherit;
-    border: inherit;
+    position: fixed;
+    bottom: 0;
+    transition-duration: .4s;
+    font-family: 'Lexend Mega', sans-serif;
 }
 
+.botoes:hover {
+    background: #202020;
+    color: white;
+}
+
+.botoes:hover > img {
+    fill: white;
+}
+
+#anterior {
+    margin: 0;
+    padding: 3vh 3vh 1.5vh 1.5vh;
+    border-top: .8vh solid #1e1624;
+    border-right: .6vh solid #1e1624;
+    border-top-right-radius: 95%;
+}
 #proximo {
-    position: absolute;
     right: 0;
+    padding: 3vh 1.5vh 1.5vh 3vh;
+    border-top: .8vh solid #1e1624;
+    border-left: .6vh solid #1e1624;
+    border-top-left-radius: 95%;
+    transform: translateX(0vh);
 }
