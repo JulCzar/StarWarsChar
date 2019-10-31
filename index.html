@@ -6,36 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>StarWars Wiki</title>
 </head>
 
 <body>
     <main>
-        <div>
+        <div class="whiteBox">
+            <h1 id="titulo">StarWars wiki</h1>
             <table>
-                <tr class="titulo">
-                    <th colspan="7">Star Wars Characthers</th>
-                </tr>
-                <tr onLoad="carregaTabela()" class="dados">
-                    <td>Personagem      </td>
-                    <td>altura(cm)      </td>
-                    <td>Peso(kg)        </td>
-                    <td>Cor do cabelo   </td>
-                    <td>Cor da Pele     </td>
-                    <td>Cor da Íris     </td>
-                    <td>Nascimento      </td>
-                </tr>
+                <thead>
+                    <tr class="titulo">
+                        <th colspan="8">Star Wars Characthers</th>
+                    </tr>
+                    <tr class="dados">
+                        <td>Personagem </td>
+                        <td>altura(cm) </td>
+                        <td>Peso(kg) </td>
+                        <td>Cor do cabelo </td>
+                        <td>Cor da Pele </td>
+                        <td>Cor da Íris </td>
+                        <td>Nascimento </td>
+                        <td>Sexo    </td>
+                    </tr>
+                </thead>
                 <tbody id="local">
                 </tbody>
             </table>
-            <button class="botoes" hidden="true" id="anterior" onclick="anterior()"><img src="img/arrow_back-24px.svg" alt="anterior"></button>
-            <button class="botoes" hidden="true" id="proximo" onclick="proximo()"><img src="img/arrow_forward-24px.svg" alt="próximo"></button>
+            <button class="botoes" hidden="true" id="anterior" onclick="api(this)"><img src="img/arrow_back-24px.svg"
+                    alt="anterior"></button>
+            <button class="botoes" hidden="true" id="proximo" onclick="api(this)"><img src="img/arrow_forward-24px.svg"
+                    alt="próximo"></button>
         </div>
     </main>
 </body>
 
-<script src="/index.js "></script>
+<script src="script/variaveis.js"></script>
+<script src="script/index.js "></script>
 
 </html>

@@ -1,11 +1,24 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap');
+
+:root {
+    --roxo: #9000ff;
+}
 body {
-    background: url(img/wallpaper);
+    background: url(../img/wallpaper);
     background-size: 100%;
     background-attachment: fixed;
 }
 
+.whiteBox {
+    background: #ffffff93;
+}
+
+#titulo {
+    font-family: 'Lexend Mega', sansserif;
+    font-size: 5vh;
+    font-weight: 900;
+}
 table {
     width: 80vmax;
     height: 90vmin;
@@ -37,7 +50,7 @@ td {
     padding: 2vh;
 }
 
-tr:last-child > .ultima:last-child {
+tbody > tr:last-child > td:last-child {
     border-bottom-right-radius: 5vh;
 }
 
@@ -70,15 +83,15 @@ tr:last-child > .ultima:last-child {
 #anterior {
     margin: 0;
     padding: 3vh 3vh 1.5vh 1.5vh;
-    border-top: .8vh solid #1e1624;
-    border-right: .6vh solid #1e1624;
+    border-top: .8vh solid var(--roxo);
+    border-right: .6vh solid var(--roxo);
     border-top-right-radius: 95%;
 }
 #proximo {
     right: 0;
     padding: 3vh 1.5vh 1.5vh 3vh;
-    border-top: .8vh solid #1e1624;
-    border-left: .6vh solid #1e1624;
+    border-top: .8vh solid var(--roxo);
+    border-left: .6vh solid var(--roxo);
     border-top-left-radius: 95%;
     transform: translateX(0vh);
 }
