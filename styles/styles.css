@@ -12,56 +12,38 @@ body {
 
 .whiteBox {
     background: #ffffff93;
+    margin-bottom: 0;
+    padding: 3vh;
 }
 
 #titulo {
     font-family: 'Lexend Mega', sansserif;
-    font-size: 5vh;
-    font-weight: 900;
-}
-table {
-    width: 80vmax;
-    height: 90vmin;
-    margin: 5vmin 10vmax;
-    border-top-left-radius: 5.5vh;
-    border-bottom-right-radius: 5.5vh;
-    position: absolute;
-}
-
-table,
-td,
-th {
-    background: rgba(255, 255, 255, 0.397);
-    border: #000000 2px solid;
-    border-spacing: 0;
-}
-
-.linha {
-    padding: 0;
-}
-
-th {
-    border-top-left-radius: 5vh;
     font-size: 10vh;
-    padding: 1vh;
-}
-
-td {
-    padding: 2vh;
-}
-
-tbody > tr:last-child > td:last-child {
-    border-bottom-right-radius: 5vh;
-}
-
-.direito {
-    border-bottom-right-radius: 5vh;
-}
-
-.dados {
-    font-family: 'Lexend Mega', sans-serif;
-    font-size: 2vh;
     font-weight: 900;
+}
+
+#container {
+    margin: 2vh 2vh 0 2vh;
+}
+
+.personagem {
+    background: rgba(255, 255, 255, 0.719);
+    padding: 3vh 0 3vh 1vh;
+    margin-bottom: 3vh;
+    border-radius: 2vh;
+    box-shadow: .5vh .5vh 1vh #00000034;
+}
+
+.personagem:last-child {
+    margin-bottom: 10vh;
+}
+.nome {
+    padding: .3vh;
+    font-size: 5vh;
+    font-weight: 700;
+}
+.genero {
+    width: 3vh;
 }
 
 .botoes {
@@ -93,5 +75,4 @@ tbody > tr:last-child > td:last-child {
     border-top: .8vh solid var(--roxo);
     border-left: .6vh solid var(--roxo);
     border-top-left-radius: 95%;
-    transform: translateX(0vh);
 }

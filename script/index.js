@@ -20,3 +20,14 @@ function api(atual = 'https://swapi.co/api/people/?format=json') {
             });
         });
 }
+
+async function planetaNat(item) {
+    item += "?format=json"
+    const response = await fetch(item, myInit).json()
+    return response.name
+}
+
+function calc(item, divisor) {
+    item /= divisor
+    return item + "m"
+}
