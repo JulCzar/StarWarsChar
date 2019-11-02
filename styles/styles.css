@@ -33,6 +33,7 @@ body {
 }
 
 .personagem {
+    border: .3vh solid black;
     background: rgba(255, 255, 255, 0.719);
     padding: 3vh 0 3vh 1vh;
     margin-bottom: 3vh;
