@@ -1,12 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap');
 
+@font-face {
+    font-family: StarWars;
+    src: url('../fonts/Strjmono.ttf')
+}
+
 :root {
     --roxo: #9000ff;
 }
 body {
     background: url(../img/wallpaper);
-    background-size: 100%;
+    background-size:cove;
     background-attachment: fixed;
 }
 
@@ -17,9 +22,10 @@ body {
 }
 
 #titulo {
-    font-family: 'Lexend Mega', sansserif;
-    font-size: 10vh;
+    font-family: 'StarWars', sansserif;
+    font-size: 5vmax;
     font-weight: 900;
+    margin-bottom: 5vh;
 }
 
 #container {
@@ -34,16 +40,60 @@ body {
     box-shadow: .5vh .5vh 1vh #00000034;
 }
 
+.personagem:nth-child(2n+1) {
+    margin-left: 4vh;
+    width: 45%;
+    display: block;
+    float: left;
+}
+
+.personagem:nth-child(2n) {
+    margin-right: 3vh;
+    width: 45%;
+    display: block;
+    float: right;
+}
+.personagem > div {
+    display: inline;
+}
+.personagem > div:nth-child(1){
+    display: block;
+}
+
+
 .personagem:last-child {
     margin-bottom: 10vh;
 }
 .nome {
+    transform: translateX(2vh);
     padding: .3vh;
     font-size: 5vh;
     font-weight: 700;
+    margin-bottom: 2vh;
 }
-.genero {
-    width: 3vh;
+.dados {
+    padding-right: .3vh;
+    padding-left: .5vh;
+}
+.homeland {
+    float: right;
+    margin-right: 4.7vh;
+    right: 7vh;
+    font-size: 1.5vh;
+}
+.sexo {
+    display: inline-block;
+    transform: translateX(1vh) translateY(-1.7vh);
+    right: 0;
+    width: 2vh;
+}
+
+footer > h1 {
+    clear: both;
+    text-align: center;
+    font-weight: 900;
+    border-top: .4vh solid black;
+    padding-top: 2.8vh;
 }
 
 .botoes {
