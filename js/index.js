@@ -39,12 +39,12 @@ async function makeRow(item) {
     return `
     <div class="personagem">
         <div class="nome">${(item.name) + '<span class="sexo">' + ((item.gender != "n/a") ? ((item.gender == "male") ? man : woman) : na) + '</span>' + '<span class="homeland">' + (planet) + "</span>"}</div>
-        <div class="altura dados">${altura}</div>
-        <div class="peso dados">${peso}</div>
-        <div class="CabeloCor dados">${item.hair_color}</div>
-        <div class="peleCor dados">${item.skin_color}</div>
-        <div class="olhoCor dados">${item.eye_color}</div>
-        <div class="nasceu dados">${nascimento}</div>
+            <div class="altura dados">${altura} -</div>
+            <div class="peso dados">${peso} -</div>
+            <div class="CabeloCor dados">${item.hair_color} -</div>
+            <div class="peleCor dados">${item.skin_color} -</div>
+            <div class="olhoCor dados">${item.eye_color} -</div>
+            <div class="nasceu dados">${nascimento}</div>
     </div>
     `
 }

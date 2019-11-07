@@ -7,7 +7,7 @@
 }
 
 :root {
-    --roxo: #9000ff;
+    --roxo: #2c2472;
 }
 body {
     background: url(../img/wallpaper);
@@ -73,6 +73,7 @@ body {
     margin-bottom: 2vh;
 }
 .dados {
+    width: 10vh;
     padding-right: .3vh;
     padding-left: .5vh;
 }
@@ -99,31 +100,46 @@ footer > h1 {
 
 .botoes {
     position: fixed;
-    bottom: 0;
+    bottom: 50vmin;
     transition-duration: .4s;
     font-family: 'Lexend Mega', sans-serif;
 }
 
 .botoes:hover {
-    background: #202020;
+    background: rgba(255, 255, 255, 0.404);
     color: white;
 }
 
-.botoes:hover > img {
-    fill: white;
+.botoes:active {
+    background: white;
 }
+
 
 #anterior {
     margin: 0;
     padding: 3vh 3vh 1.5vh 1.5vh;
-    border-top: .8vh solid var(--roxo);
+    border-top: .6vh solid var(--roxo);
     border-right: .6vh solid var(--roxo);
-    border-top-right-radius: 95%;
+    border-bottom: .6vh solid var(--roxo);
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    transform: translateX(-7vh);
+    transition: .5s;
+}
+#anterior:hover {
+    transform: translateX(-0.4vh);
 }
 #proximo {
     right: 0;
     padding: 3vh 1.5vh 1.5vh 3vh;
-    border-top: .8vh solid var(--roxo);
+    border-top: .6vh solid var(--roxo);
     border-left: .6vh solid var(--roxo);
-    border-top-left-radius: 95%;
+    border-bottom: .6vh solid var(--roxo);
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+    transform: translateX(7vh);
+    transition: .5s;
+}
+#proximo:hover {
+    transform: translateX(.4vh);
 }
